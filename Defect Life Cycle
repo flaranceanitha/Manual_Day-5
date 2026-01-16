@@ -1,0 +1,137 @@
+Defect Life Cycle
+
+1. Explain about Defect Life Cycle.
+
+Defect Life Cycle:
+Defect life cycle, also known as Bug Life cycle is the journey of a defect cycle, which a defect goes through during its lifetime. 
+It varies from organization to organization and also from project to project as it is governed by the software testing process and also depends upon the tools used.
+
+Defect Life Cycle States:
+
+New - Potential defect that is raised and yet to be validated.
+Assigned - Assigned against a development team to address it but not yet resolved.
+Active - The Defect is being addressed by the developer and investigation is under progress. At this stage there are two possible outcomes; viz - Deferred or Rejected.
+Test - The Defect is fixed and ready for testing.
+Verified - The Defect that is retested and the test has been verified by QA.
+Closed - The final state of the defect that can be closed after the QA retesting or can be closed if the defect is duplicate or considered as NOT a defect.
+Reopened - When the defect is NOT fixed, QA reopens/reactivates the defect.
+Deferred - When a defect cannot be addressed in that particular cycle it is deferred to future release.
+Rejected - A defect can be rejected for any of the 3 reasons; viz - duplicate defect, NOT a Defect, Non Reproducible.
+
+
+Alternative States:
+
+Reopen: If the tester finds the defect isn't fixed during retesting, it's reopened and sent back to the developer.
+Deferred: The defect isn't critical for the current release and is postponed to a future one.
+Rejected: The developer determines it's not a real bug (e.g., duplicate, not reproducible, or works as intended).
+Duplicate: The defect is the same as another already reported bug. 
+
+Purpose:
+
+Tracking & Communication: Provides a clear view of defect status for the entire team.
+Quality Assurance: Ensures all issues are properly addressed, leading to higher quality software.
+Efficiency: Streamlines the process of fixing issues. 
+
+
+2. What is Test Metrics? Explain with example. 
+
+Test metrics are quantifiable measurements used to assess the effectiveness, efficiency, and quality of software testing, 
+providing data-driven insights into project status, progress, and product quality, like tracking test coverage, defect trends, 
+or execution rates, helping teams make informed decisions on release readiness and process improvements. 
+For example, Defect Density (defects per requirement) shows quality, while Test Case Execution (passed/failed) reveals progress,
+helping decide if a feature is ready or needs more work. [1, 2, 3, 4] 
+ 
+Types of software testing metrics:
+
+There are three types of software testing metrics
+Process Metrics: Process metrics define the characteristics and execution of a project.
+These characteristics are essential to the improvement and maintenance of the process in the SDLC (Software Development Life Cycle).
+Product Metrics: Product metrics define the size, design, performance, quality, and complexity of a product.
+By using these characteristics, developers can enhance their software development quality.
+Project Metrics: Project Metrics determine the overall quality of a project. It is used to calculate costs, productivity, 
+defects and estimate the resource and deliverables of a project.
+
+It is incredibly vital to identify the correct testing metrics for the process. Few factors to consider−
+
+Choose your target audiences wisely before preparing the metrics
+Define the goal behind designing the metrics
+Prepare metrics by considering the specific requirements of the project
+Evaluate the financial gain behind each metrics
+Pair the metrics with the project lifestyle phase that delivers optimum output
+
+Importance of Software Testing Metrics:
+
+Determine what types of improvements are required to deliver a defect-free, quality software
+Make sound decisions about the subsequent testing phases, such as scheduling upcoming projects as well as estimating the overall cost of those projects
+Evaluate the current technology or process and check whether it needs further modifications
+
+Types of Manual Test Metrics
+Manual Test Metrics are of two types−
+
+Base Metrics
+
+Base metrics are data collected by analysts during test case development and execution. 
+These metrics are submitted to test leads and project managers by preparing a project status report. It is quantified by using calculated metrics −
+Number of test cases
+Number of test cases executed
+
+Calculated Metrics
+
+Calculated metrics are derived using data from base metrics. The test lead gathers these data and 
+converts them to more meaningful information for tracking the progress of projects at the module level, tester level, etc.
+
+It comprises a significant part of SDLC and empowers developers to make vital improvements in software.
+
+Most used Metrics
+
+Below are the types of metrics, popularly used by developers and testers
+Defect metrics: This metric allows developers to understand the various quality aspects of software, including functionality, 
+                performance, installation stability, usability, compatibility, etc.
+Defects finding rate: It is used to identify the pattern of defects during a specific timeframe
+Defect severity: It enables the developer to understand how the defect is going to impact the quality of the software.
+Defect cause: It is used to understand the root cause of the defect.
+Test Coverage: It defines how many test cases are assigned to the program. This metric ensures the testing is conducted to its full completion.
+It further aids in checking the code flow and test functionalities.
+Defect fixing time: It determines the amount of time it takes to resolve a defect
+Test case efficiency: It tells the efficiency rate of test cases in finding defects
+Schedule adherence: Its primary motive is to figure out the time difference between the planned schedule and the actual time of executing a schedule.
+
+
+Test Metrics Life Cycle
+
+The life cycle of test metrics consists of four stages−
+Analysis: In this stage, developers identify the required metrics and define them.
+Communicate: Once metrics are identified, developers have to explain their importance to stakeholders and the testing team.
+Evaluation: This stage includes quantifying and verifying the data. Then testers have to use the data to calculate the value of the metric.
+Report: Once the evaluation process is finished, the development team needs to create a report including a detailed summary of the conclusion. 
+        Then the report is distributed among stakeholders and relevant representatives. The stakeholders then give their feedback after reading the information carefully.
+
+Examples: 
+
+• Test Coverage: Measures how much of the requirements or code is covered by tests (e.g., 90% of features tested). 
+• Defect Density: Number of defects found per unit of code or requirement (e.g., 5 bugs per 100 lines of code). 
+• Test Execution Rate: Percentage of planned tests executed (e.g., 80 out of 100 tests run). 
+• Defect Leakage: Defects found in later stages (like UAT) that should have been caught earlier (e.g., 3 critical bugs missed in System Testing). 
+• Mean Time To Repair (MTTR): Average time taken to fix a defect, indicating bug-fixing efficiency. [2, 6, 7]  
+
+Example Scenario: Login Feature Testing 
+Imagine testing a new login feature with 10 requirements: 
+
+1. Requirements Coverage: 10/10 requirements mapped to test cases (100% coverage). 
+2. Test Execution: 20 test cases created, 18 executed, 2 blocked (e.g., due to environment issues). 
+3. Test Results: 15 Passed, 3 Failed (e.g., invalid password, empty fields). 
+4. Defect Tracking: 5 bugs found (3 invalid password, 1 empty field, 1 security flaw), 2 rejected. [2, 7, 8]  
+
+Insights from Metrics: 
+
+• High Coverage (100%) shows thoroughness in planning. 
+• Execution Rate (90%) indicates progress, but the 2 blocked tests need investigation. 
+• Failure Rate (3/18) points to issues in logic or UI. 
+• Defect Density (5 bugs / 10 requirements) shows potential quality issues in the login module, guiding developers to focus on those areas. [2, 7, 8, 9]  
+
+
+3. Prepare a sample Defect Metrics in excel.
+
+
+Attached Excel Sheet
+
